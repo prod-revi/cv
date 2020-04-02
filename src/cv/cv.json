@@ -1,0 +1,93 @@
+{
+  "head": {
+    "name": "Oliver Ramirez",
+    "carrier": "Front End"
+  },
+  "about": {
+    "title": "About Me",
+    "info": [
+      {"id": "1", "key": "birth", "value": "12-06-1994"},
+      {"id": "2", "key": "web", "value": "www.revileando.com"},
+      {"id": "3", "key": "phone", "value": "+5491124541234"},
+      {"id": "4", "key": "email", "value": "oliiv@outlook.com"},
+      {"id": "5", "key": "skype", "value": "Revi"}
+    ],
+    "img": {
+      "link": "",
+      "alt": ""
+    },
+    "description": "I take the design and develop it into a website that works"
+  },
+  "skills": [
+    {"id": "1", "name": "HTML/CSS"},
+    {"id": "2", "name": "CSS and JavaScript Frameworks"},
+    {"id": "3", "name": "CSS Processing"},
+    {"id": "4", "name": "JavaScript"},
+    {"id": "5", "name": "Version Control/GIT"},
+    {"id": "6", "name": "Responsive Design"},
+    {"id": "7", "name": "Testing/Debugging"},
+    {"id": "8", "name": "Browser Developers Tools"},
+    {"id": "9", "name": "Building and Automation Tools/web Performance"},
+    {"id": "10", "name": "Command Line"},
+    {"id": "11", "name": "group management"},
+    {"id": "12", "name": "Work by Objective"},
+    {"id": "13", "name": "Flexibility to Travel"},
+    {"id": "14", "name": "Multicultural Environment"},
+    {"id": "15", "name": "Logical and Conceptual Thinking"}
+  ],
+  "experiences": [
+    {
+      "id": "1",
+      "title": "Front End Engineer",
+      "date": "2019 - 2020",
+      "company": "Wenance",
+      "description": ""
+    },
+    {
+      "id": "2",
+      "title": "UI/UX Developer",
+      "date": "2016 - 2019",
+      "company": "Eulas",
+      "description": ""
+    },
+    {
+      "id": "3",
+      "title": "Systems Analyzer",
+      "date": "2015",
+      "company": "Raro",
+      "description": ""
+    }
+  ],
+  "education": [
+    {
+      "school": "Colombia School of Industrial Carriers",
+      "title": "engineering, System Engineering"
+    },
+    {
+      "school": "Coder House",
+      "title": "Web Development, Front End Web Developer"
+    }
+  ],
+  "social": [
+    {
+      "media": "linkedin",
+      "description": "Revi",
+      "link": ""
+    },
+    {
+      "media": "email",
+      "description": "oliiv@outlook.com",
+      "link": ""
+    },
+    {
+      "media": "git",
+      "description": "git revi",
+      "link": ""
+    },
+    {
+      "media": "portfolio",
+      "description": "rev portfolio",
+      "link": ""
+    }
+  ]
+}
