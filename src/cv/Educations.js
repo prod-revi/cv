@@ -27,10 +27,10 @@ const EducationContainerItem = styled.div`
   display: block;
   padding: 0 0 20px;
   margin: 10px 10px 20px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #6bdfdc;
 
   &:last-child {
-  border-bottom: none;
+    border-bottom: none;
   }
 
   span {
