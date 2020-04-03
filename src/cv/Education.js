@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Subtitle, ContainerSection } from '../common'
+
 
 function Education (props) {
-  const {education} = props
+  const { title, education } = props
   return (
-    <EducationContainer>
-      <h3>Education</h3>
+    <ContainerSection>
+      <Subtitle title="Education" withoutBackground />
       <>
         {education.map((edu) => {
           const {school, title} = edu
@@ -17,11 +19,9 @@ function Education (props) {
           )
         })}
       </>
-    </EducationContainer>
+    </ContainerSection>
   )
 }
-
-const EducationContainer = styled.div``
 
 const EducationContainerItem = styled.div`
   display: block;

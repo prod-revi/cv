@@ -18,23 +18,26 @@
     },
     "description": "I take the design and develop it into a website that works"
   },
-  "skills": [
-    {"id": "1", "name": "HTML/CSS"},
-    {"id": "2", "name": "CSS and JavaScript Frameworks"},
-    {"id": "3", "name": "CSS Processing"},
-    {"id": "4", "name": "JavaScript"},
-    {"id": "5", "name": "Version Control/GIT"},
-    {"id": "6", "name": "Responsive Design"},
-    {"id": "7", "name": "Testing/Debugging"},
-    {"id": "8", "name": "Browser Developers Tools"},
-    {"id": "9", "name": "Building and Automation Tools/web Performance"},
-    {"id": "10", "name": "Command Line"},
-    {"id": "11", "name": "group management"},
-    {"id": "12", "name": "Work by Objective"},
-    {"id": "13", "name": "Flexibility to Travel"},
-    {"id": "14", "name": "Multicultural Environment"},
-    {"id": "15", "name": "Logical and Conceptual Thinking"}
-  ],
+  "skills": {
+    "title": "Skills",
+    "skills": [
+      {"id": "1", "name": "HTML/CSS"},
+      {"id": "2", "name": "CSS and JavaScript Frameworks"},
+      {"id": "3", "name": "CSS Processing"},
+      {"id": "4", "name": "JavaScript"},
+      {"id": "5", "name": "Version Control/GIT"},
+      {"id": "6", "name": "Responsive Design"},
+      {"id": "7", "name": "Testing/Debugging"},
+      {"id": "8", "name": "Browser Developers Tools"},
+      {"id": "9", "name": "Building and Automation Tools/web Performance"},
+      {"id": "10", "name": "Command Line"},
+      {"id": "11", "name": "group management"},
+      {"id": "12", "name": "Work by Objective"},
+      {"id": "13", "name": "Flexibility to Travel"},
+      {"id": "14", "name": "Multicultural Environment"},
+      {"id": "15", "name": "Logical and Conceptual Thinking"}
+    ]
+  },
   "experiences": [
     {
       "id": "1",

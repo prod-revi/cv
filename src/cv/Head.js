@@ -13,8 +13,16 @@ function Head (props) {
 
 
 const HeadContainer = styled.div`
-  background-color: lightgrey;
-  padding: 10px;
+  padding: 10px 50px;
+  text-align: left;
+
+  background-color: #1fc8db54;
+  background-image: linear-gradient(
+    141deg,
+    #3ee69ca6 0%,
+    #1fc8db78 51%,
+    #289cff9e 75%
+  );
 `
 
 export default Head

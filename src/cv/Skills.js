@@ -1,12 +1,13 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components"
+import { Subtitle, ContainerSection } from '../common'
 
 function Skills(props) {
-  const {skills} = props
+  const { title, skills } = props.skills
   return (
-    <SkillsContainer>
-      <h3>Skills</h3>
-      <SkillContainer>
+    <ContainerSection>
+      <Subtitle title={title} />
+      <>
         {skills.map((skill) => {
           return (
             <SkillContainer key={skill.id}>
@@ -14,17 +15,17 @@ function Skills(props) {
             </SkillContainer>
           )
         })}
-      </SkillContainer>
-    </SkillsContainer>
+      </>
+    </ContainerSection>
   );
 }
 
-const SkillsContainer = styled.div`
-
-`
 const SkillContainer = styled.div`
-  margin: 10px;
+  margin: 5px;
   display: inline-block;
+  border: 2px solid #6bdfdc;
+  padding: 10px 10px;
+  border-radius: 25px;
 `
 
 export default Skills;

@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Subtitle, ContainerSection } from '../common'
+
 
 function Experiences (props) {
   const {experiences} = props
   return (
-    <ExperiencesContainer>
-      <h3>Experience</h3>
+    <ContainerSection>
+      <Subtitle title="Experience" withoutBackground />
       <>
         {experiences.map((experience) => {
           const {id, title, date, company, description} = experience
@@ -19,12 +21,9 @@ function Experiences (props) {
           )
         })}
       </>
-    </ExperiencesContainer>
+    </ContainerSection>
   )
 }
-
-const ExperiencesContainer = styled.div`
-`
 
 const ExperienceContainer = styled.div`
 display: block;
