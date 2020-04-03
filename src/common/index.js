@@ -18,15 +18,15 @@ const SubtitleContainer = styled.div`
 
 const SubtitleElement = styled.h3`
   margin: 0;
-  width: fit-content;
+  /* width: fit-content; */
   padding: 10px;
   width: 120px;
-  text-align: center;
+  /* text-align: center; */
 
-  background-color: #ffffff5e;
-  border-radius: 25px;
+  /* background-color: #ffffff5e; */
+  /* border-radius: 25px; */
 
-  ${props => !props.withoutBackground && css`
+  /* ${props => !props.withoutBackground && css`
     background-color: #1fc8db54;
     background-image: linear-gradient(
       141deg,
@@ -41,7 +41,7 @@ const SubtitleElement = styled.h3`
 
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
-  `}
+  `} */
 `;
 
 function ContainerSection (props) {
@@ -54,6 +54,7 @@ function ContainerSection (props) {
 
 const ContainerSectionStyle = styled.div`
   padding: 25px;
+  border: 1px solid #ccc;
 `
 
 export { Subtitle, ContainerSection };

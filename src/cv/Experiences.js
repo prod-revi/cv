@@ -4,19 +4,19 @@ import { Subtitle, ContainerSection } from '../common'
 
 
 function Experiences (props) {
-  const {experiences} = props
+  const { title, items} = props.experiences
   return (
     <ContainerSection>
-      <Subtitle title="Experience" withoutBackground />
+      <Subtitle title={title} withoutBackground />
       <>
-        {experiences.map((experience) => {
+        {items.map((experience) => {
           const {id, title, date, company, description} = experience
           return (
             <ExperienceContainer key={id}>
-              {title}
-              {date}
-              {company}
-              {description}
+              <span>{company}</span>
+              <span>{title}</span>
+              <span>{date}</span>
+              <p>{description}</p>
             </ExperienceContainer>
           )
         })}
@@ -26,8 +26,17 @@ function Experiences (props) {
 }
 
 const ExperienceContainer = styled.div`
-display: block;
-margin: 10px;
+  display: block;
+  margin: 10px 10px 20px;
+  border-bottom: 1px solid #ccc;
+
+  &:last-child {
+  border-bottom: none;
+  }
+
+  span {
+    margin-right: 20px;
+  }
 `
 
 export default Experiences

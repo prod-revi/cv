@@ -1,7 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
 import { Subtitle, ContainerSection } from '../common'
-import revImage from '../common/rev.jpg'
 
 function About(props) {
   const { title, info } = props.about;
@@ -20,9 +19,7 @@ function About(props) {
           })}
         </FirstDivision>
         <SecondDivision>
-          <ContainerImage>
-            <img src={revImage} alt="revi" />
-          </ContainerImage>
+          
           <ContainerText>
             <p>I take the design and develop it into a website that works</p>
           </ContainerText>
@@ -39,7 +36,8 @@ const AboutDivision = styled.div`
 `
 
 const FirstDivision = styled.div`
-  flex-basis: 40%;
+  /* flex-basis: 40%; */
+  margin-left: 10px;
 `
 
 const ContainerItem = styled.div`
@@ -70,19 +68,6 @@ const SecondDivision = styled.div`
   border-radius: 11px;
 `
 
-const ContainerImage = styled.div`
-  width: 125px;
-  height: 115px;
-  padding-right: 10px;
-  border: 3px solid #6bdfdc;
-  border-radius: 50%;
-  overflow: hidden;
-
-  img {
-    max-width: 120%;
-    width: 120%;
-  }
-`
 const ContainerText = styled.div`
   padding: 20px;
 `

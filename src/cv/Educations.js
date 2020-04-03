@@ -3,18 +3,18 @@ import styled from 'styled-components'
 import { Subtitle, ContainerSection } from '../common'
 
 
-function Education (props) {
-  const { title, education } = props
+function Educations (props) {
+  const { title, items } = props.educations
   return (
     <ContainerSection>
-      <Subtitle title="Education" withoutBackground />
+      <Subtitle title={title} withoutBackground />
       <>
-        {education.map((edu) => {
+        {items.map((edu) => {
           const {school, title} = edu
           return (
             <EducationContainerItem>
-              {school}
-              {title}
+              <span>{school}</span>
+              <span>{title}</span>
             </EducationContainerItem>
           )
         })}
@@ -25,7 +25,17 @@ function Education (props) {
 
 const EducationContainerItem = styled.div`
   display: block;
-  margin: 10px;
+  padding: 0 0 20px;
+  margin: 10px 10px 20px;
+  border-bottom: 1px solid #ccc;
+
+  &:last-child {
+  border-bottom: none;
+  }
+
+  span {
+    display: block;
+  }
 `
 
-export default Education
+export default Educations

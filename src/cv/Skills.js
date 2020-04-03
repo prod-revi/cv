@@ -7,15 +7,16 @@ function Skills(props) {
   return (
     <ContainerSection>
       <Subtitle title={title} />
-      <>
+      <ContainerSkills>
         {skills.map((skill) => {
+          const { id, name } = skill
           return (
-            <SkillContainer key={skill.id}>
-              <span>{skill.name}</span>
+            <SkillContainer key={id}>
+              <span>{name}</span>
             </SkillContainer>
           )
         })}
-      </>
+      </ContainerSkills>
     </ContainerSection>
   );
 }
@@ -26,6 +27,10 @@ const SkillContainer = styled.div`
   border: 2px solid #6bdfdc;
   padding: 10px 10px;
   border-radius: 25px;
+`
+
+const ContainerSkills = styled.div`
+  text-align: center;
 `
 
 export default Skills;
