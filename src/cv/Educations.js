@@ -13,7 +13,7 @@ function Educations (props) {
           const {school, title} = edu
           return (
             <EducationContainerItem>
-              <span>{school}</span>
+              <SpanStyled>{school}</SpanStyled>
               <span>{title}</span>
             </EducationContainerItem>
           )
@@ -36,6 +36,11 @@ const EducationContainerItem = styled.div`
   span {
     display: block;
   }
+`
+
+const SpanStyled = styled.span`
+  text-transform: uppercase;
+  font-style: italic;
 `
 
 export default Educations

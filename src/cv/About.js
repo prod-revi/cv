@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 import styled from 'styled-components'
 import { Subtitle, ContainerSection } from '../common'
 
 function About(props) {
-  const { title, info } = props.about;
+  const { title, info, description } = props.about
   return (
     <ContainerSection>
       <Subtitle title={title} />
@@ -19,14 +19,13 @@ function About(props) {
           })}
         </FirstDivision>
         <SecondDivision>
-          
           <ContainerText>
-            <p>I take the design and develop it into a website that works</p>
+            <p>{description}</p>
           </ContainerText>
         </SecondDivision>
       </AboutDivision>
     </ContainerSection>
-  );
+  )
 }
 
 const AboutDivision = styled.div`
@@ -72,4 +71,4 @@ const ContainerText = styled.div`
   padding: 20px;
 `
 
-export default About;
+export default About
