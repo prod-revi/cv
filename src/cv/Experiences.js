@@ -13,7 +13,7 @@ function Experiences (props) {
           const {id, title, date, company, description} = experience
           return (
             <ExperienceContainer key={id}>
-              <span>{company}</span>
+              <SpanStyled>{company}</SpanStyled>
               <span>{title}</span>
               <span>{date}</span>
               <p>{description}</p>
@@ -37,6 +37,11 @@ const ExperienceContainer = styled.div`
   span {
     margin-right: 20px;
   }
+`
+
+const SpanStyled = styled.span`
+  text-transform: uppercase;
+  font-style: italic;
 `
 
 export default Experiences
