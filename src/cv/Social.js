@@ -9,13 +9,12 @@ function Social(props) {
       <Subtitle title="Social" withoutBackground />
       <ContainerSocial>
         {social.map((so) => {
-          const { id, media, description, link } = so
+          const { id, media, description, link, srcImg } = so
           return (
             <ItemContainer key={id}>
-              <a href={link} alt={description}>
-                {media}
+              <a href={link} >
+                <ImgMedia src ={srcImg} alt={`${media} ${description}`} />
               </a>
-              <span>{description}</span>
             </ItemContainer>
           )
         })}
@@ -24,12 +23,15 @@ function Social(props) {
   )
 }
 
+const ImgMedia = styled.img`
+  width: 50px;
+`
+
 const ItemContainer = styled.div`
   width: 160px;
   margin: 0 10px;
   padding: 5px;
   display: inline-block;
-  border: 2px solid #6bdfdc;
   padding: 10px 10px;
   border-radius: 25px;
 

@@ -12,7 +12,7 @@ function Educations (props) {
         {items.map((edu) => {
           const {school, title} = edu
           return (
-            <EducationContainerItem>
+            <EducationContainerItem key={edu.id}>
               <SpanStyled>{school}</SpanStyled>
               <span>{title}</span>
             </EducationContainerItem>
@@ -30,7 +30,7 @@ const EducationContainerItem = styled.div`
   border-bottom: 1px solid #6bdfdc;
 
   &:last-child {
-    border-bottom: none;
+    margin-bottom: 0;
   }
 
   span {
@@ -41,6 +41,8 @@ const EducationContainerItem = styled.div`
 const SpanStyled = styled.span`
   text-transform: uppercase;
   font-style: italic;
+  font-size: 1.1em;
+  font-weight: 600;
 `
 
 export default Educations

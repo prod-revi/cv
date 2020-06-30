@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 function Subtitle(props) {
   const { title, withoutBackground } = props;
@@ -16,32 +16,20 @@ const SubtitleContainer = styled.div`
   margin-bottom: 20px;
 `;
 
-const SubtitleElement = styled.h3`
+const SubtitleElement = styled.h2`
   margin: 0;
-  /* width: fit-content; */
   padding: 10px;
-  width: 120px;
-  /* text-align: center; */
+  font-weight: 500;
+  display: inline-block;
 
-  /* background-color: #ffffff5e; */
-  /* border-radius: 25px; */
-
-  /* ${props => !props.withoutBackground && css`
-    background-color: #1fc8db54;
-    background-image: linear-gradient(
-      141deg,
-      #3ee69ca6 0%,
-      #1fc8db78 51%,
-      #289cff9e 75%
-    );
-
-    -webkit-box-shadow: 0px 0px 24px -7px rgba(78, 94, 204, 1);
-    -moz-box-shadow: 0px 0px 24px -7px rgba(78, 94, 204, 1);
-    box-shadow: 0px 0px 24px -7px rgba(78, 94, 204, 1);
-
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-  `} */
+  &:after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #6bdfdc;
+    margin-top: 5px;
+    width: 125%;
+  }
 `;
 
 function ContainerSection (props) {
@@ -53,8 +41,7 @@ function ContainerSection (props) {
 }
 
 const ContainerSectionStyle = styled.div`
-  padding: 25px;
-  border: 1px solid #ccc;
+  padding: 20px 25px 10px ;
 `
 
 export { Subtitle, ContainerSection };
