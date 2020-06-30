@@ -26,8 +26,8 @@ function Experiences (props) {
 }
 
 const ExperienceContainer = styled.div`
-  display: block;
   margin: 10px 10px 20px;
+  padding-top: 10px;
   border-bottom: 1px solid #6bdfdc;
 
   &:last-child {
@@ -42,6 +42,7 @@ const ExperienceContainer = styled.div`
 const SpanStyled = styled.span`
   text-transform: uppercase;
   font-style: italic;
+  font-weight: 600;
 `
 
 export default Experiences

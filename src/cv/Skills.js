@@ -21,16 +21,20 @@ function Skills(props) {
   );
 }
 
+const ContainerSkills = styled.div`
+  display: flex;
+  justify-content: space-evenly
+`
+
 const SkillContainer = styled.div`
   margin: 5px;
   display: inline-block;
   border: 2px solid #6bdfdc;
   padding: 10px 10px;
   border-radius: 25px;
+  min-width: 100px;
+  text-align: center
 `
 
-const ContainerSkills = styled.div`
-  text-align: center;
-`
 
 export default Skills;

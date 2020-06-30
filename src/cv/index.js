@@ -34,7 +34,12 @@ const CvContainer = styled.div`
   width: 800px;
   margin: 0 auto;
   background-color: #ffffff;
-  border: 1px solid #ccc;
+  box-shadow: 0 1px 2px rgba(107, 223, 220,0.07), 
+                0 2px 4px rgba(107, 223, 220,0.07), 
+                0 4px 8px rgba(107, 223, 220,0.07), 
+                0 8px 16px rgba(107, 223, 220,0.07),
+                0 16px 32px rgba(107, 223, 220,0.07), 
+                0 32px 64px rgba(107, 223, 220,0.07);
 `
 
 const SectionColor = styled.div`
