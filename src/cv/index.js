@@ -6,21 +6,21 @@ import Skills from './Skills'
 import Experiences from './Experiences'
 import Educations from './Educations'
 import Social from './Social'
+import Projects from './Projects'
 import styled from 'styled-components'
 
 function Cv () {
-  const { head, about, skills, experiences, educations, social } = data
+  const { head, about, skills, experiences, educations, projects, social } = data
   return (
     <BackgroundContainer>
       <CvContainer>
         <Head head={head} />
         <About about={about} />
         <Skills skills={skills} />
-        <SectionColor>
-          <Experiences experiences={experiences} />
-          <Educations educations={educations} />
-          <Social social={social} />
-        </SectionColor>
+        <Experiences experiences={experiences} />
+        <Educations educations={educations} />
+        <Projects projects={projects} />
+        <Social social={social} />
       </CvContainer>
     </BackgroundContainer>
   )
@@ -40,10 +40,6 @@ const CvContainer = styled.div`
                 0 8px 16px rgba(107, 223, 220,0.07),
                 0 16px 32px rgba(107, 223, 220,0.07), 
                 0 32px 64px rgba(107, 223, 220,0.07);
-`
-
-const SectionColor = styled.div`
-  /* background-color: #6bdfdc; */
 `
 
 export default Cv

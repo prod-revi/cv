@@ -12,7 +12,7 @@ function About(props) {
           {info.map((item) => {
             return (
               <ContainerItem key={item.id}>
-                <FirstColumn>{item.key}</FirstColumn>
+                <FirstColumn>{item.key} :</FirstColumn>
                 <SecondColumn>{item.value}</SecondColumn>
               </ContainerItem>
             )
