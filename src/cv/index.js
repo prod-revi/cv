@@ -40,6 +40,11 @@ const CvContainer = styled.div`
                 0 8px 16px rgba(107, 223, 220,0.07),
                 0 16px 32px rgba(107, 223, 220,0.07), 
                 0 32px 64px rgba(107, 223, 220,0.07);
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+  
 `
 
 export default Cv
