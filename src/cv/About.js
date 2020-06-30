@@ -12,7 +12,7 @@ function About(props) {
           {info.map((item) => {
             return (
               <ContainerItem key={item.id}>
-                <FirstColumn>{item.key}</FirstColumn>
+                <FirstColumn>{item.key} :</FirstColumn>
                 <SecondColumn>{item.value}</SecondColumn>
               </ContainerItem>
             )
@@ -32,10 +32,14 @@ const AboutDivision = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: baseline;
+  }
 `
 
 const FirstDivision = styled.div`
-  /* flex-basis: 40%; */
   margin-left: 10px;
 `
 
@@ -65,10 +69,20 @@ const SecondDivision = styled.div`
   border-right-width: 0;
   padding: 10px;
   border-radius: 11px;
+
+  @media (max-width: 800px) {
+    border: none;
+    align-items: baseline;
+    padding: 20px 10px;
+  }
 `
 
 const ContainerText = styled.div`
   padding: 20px;
+
+  @media (max-width: 800px) {
+    padding: 0;
+  }
 `
 
 export default About

@@ -64,6 +64,17 @@
       }
     ]
   },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "id": "1",
+        "title": "CRM Seller",
+        "url": "https://crm-seller-front.vercel.app/login",
+        "description": "It is a project created for companies how want to see the follow-up of their sellers, follow the stock of the proudctos and see the sales orders."
+      }
+    ]
+  },
   "social": [
     {
       "id": "1",

@@ -31,6 +31,7 @@ const EducationContainerItem = styled.div`
 
   &:last-child {
     margin-bottom: 0;
+    border-bottom: none;
   }
 
   span {

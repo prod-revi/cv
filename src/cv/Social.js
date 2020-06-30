@@ -47,6 +47,7 @@ const ItemContainer = styled.div`
 
 const ContainerSocial = styled.div`
   text-align: center;
+  padding-bottom: 25px;
 `
 
 export default Social
