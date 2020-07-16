@@ -41,7 +41,7 @@ const ExperienceContainer = styled.div`
 
 const SpanStyled = styled.span`
   text-transform: uppercase;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 600;
 `
 
