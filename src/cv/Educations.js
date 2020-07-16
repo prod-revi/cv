@@ -41,7 +41,7 @@ const EducationContainerItem = styled.div`
 
 const SpanStyled = styled.span`
   text-transform: uppercase;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 1.1em;
   font-weight: 600;
 `
