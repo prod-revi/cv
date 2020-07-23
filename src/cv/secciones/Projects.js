@@ -1,5 +1,5 @@
 import React from 'react'
-import { Subtitle, ContainerSection } from '../common'
+import { Subtitle, ContainerSection } from '../../common'
 import styled from 'styled-components'
 
 const Projects = ({ projects }) => {

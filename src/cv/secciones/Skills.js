@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components"
-import { Subtitle, ContainerSection } from '../common'
+import { Subtitle, ContainerSection } from '../../common'
 
 function Skills(props) {
   const { title, skills } = props.skills

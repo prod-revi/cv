@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import revImage from '../common/rev.jpg'
+import revImage from '../../common/rev.jpg'
 
 function Head(props) {
   const { name, carrier } = props.head

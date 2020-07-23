@@ -1,29 +1,49 @@
 import React from 'react'
-import { default as data } from './cv.json';
-import Head from './Head'
-import About from './About'
-import Skills from './Skills'
-import Experiences from './Experiences'
-import Educations from './Educations'
-import Social from './Social'
-import Projects from './Projects'
+import { default as data } from './base_de_datos/cv.json';
+import Head from './secciones/Head'
+import About from './secciones/About'
+import Skills from './secciones/Skills'
+import Experiences from './secciones/Experiences'
+import Educations from './secciones/Educations'
+import Social from './secciones/Social'
+import Projects from './secciones/Projects'
 import styled from 'styled-components'
 
+import Router from './tools/router'
+
 function Cv () {
+  // Lazy Objects
   const { head, about, skills, experiences, educations, projects, social } = data
-  return (
-    <BackgroundContainer>
-      <CvContainer>
-        <Head head={head} />
-        <About about={about} />
-        <Skills skills={skills} />
-        <Experiences experiences={experiences} />
-        <Educations educations={educations} />
-        <Projects projects={projects} />
-        <Social social={social} />
-      </CvContainer>
-    </BackgroundContainer>
-  )
+
+  // Aqui nos decidimos
+  // entonces carga cv o se prepara para ser editada
+  // miramos si tiene el nombre
+  // router
+
+  return <Router />
+
+
+  // aqui se asegura de que puede utilizar los ?
+
+
+  // Afuera o adentro papa pero en los dos lados no
+
+  // asi que a laburar se dijo
+
+  // return (
+    
+  //   <BackgroundContainer>
+  //     <CvContainer>
+  //       <Head head={head} />
+  //       <About about={about} />
+  //       <Skills skills={skills} />
+  //       <Experiences experiences={experiences} />
+  //       <Educations educations={educations} />
+  //       <Projects projects={projects} />
+  //       <Social social={social} />
+  //     </CvContainer>
+  //   </BackgroundContainer>
+  // )
 }
 
 const BackgroundContainer = styled.div`
