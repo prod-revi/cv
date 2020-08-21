@@ -1,26 +1,38 @@
 import React from 'react'
 import { default as data } from './base_de_datos/cv.json';
-import Head from './secciones/Head'
-import About from './secciones/About'
-import Skills from './secciones/Skills'
-import Experiences from './secciones/Experiences'
-import Educations from './secciones/Educations'
-import Social from './secciones/Social'
-import Projects from './secciones/Projects'
+import Authorization from './tools/router'
 import styled from 'styled-components'
+import 'normalize.css';
 
-import Router from './tools/router'
+// import Head from './secciones/Head'
+// import About from './secciones/About'
+// import Skills from './secciones/Skills'
+// import Experiences from './secciones/Experiences'
+// import Educations from './secciones/Educations'
+// import Social from './secciones/Social'
+// import Projects from './secciones/Projects'
+
+
+// const Head = React.lazy(() => import('./sections/Head'))
+// const Skills = React.lazy(() => import('./sections/Skills'))
+// const Experiences = React.lazy(() => import('./sections/Experiences'))
+// const Educations = React.lazy(() => import('./sections/Educations'))
+// const Social = React.lazy(() => import('./sections/Social'))
+// const Projects = React.lazy(() => import('./sections/Projects'))
+
 
 function Cv () {
   // Lazy Objects
   const { head, about, skills, experiences, educations, projects, social } = data
+
+  // Muestra <Spinner> hasta que OtherComponent cargue
 
   // Aqui nos decidimos
   // entonces carga cv o se prepara para ser editada
   // miramos si tiene el nombre
   // router
 
-  return <Router />
+  return <Authorization />
 
 
   // aqui se asegura de que puede utilizar los ?

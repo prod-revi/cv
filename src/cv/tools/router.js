@@ -8,6 +8,9 @@ import {
 
 import { LoginPage, AuthButton, PublicPage, PrivateRoute, ProtectedPage } from './pages'
 
+const Header = React.lazy(() => import('../sections/Header'))
+
+
 // This example has 3 pages: a public page, a protected
 // page, and a login screen. In order to see the protected
 // page, you must first login. Pretty standard stuff.
@@ -26,6 +29,15 @@ import { LoginPage, AuthButton, PublicPage, PrivateRoute, ProtectedPage } from '
 export default function Authorization () {
   return (
     <Router>
+
+      {/* // Muestra <Spinner> hasta que OtherComponent cargue */}
+      <React.Suspense fallback='tu mama en tanga' >
+        <div>
+          <Header />
+        </div>
+      </React.Suspense>
+
+      
       <div>
         <AuthButton />
 
