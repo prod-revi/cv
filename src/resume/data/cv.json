@@ -10,24 +10,24 @@
   "about": {
     "title": "About Me",
     "info": [
-      {"id": "1", "key": "birth", "value": "12-06-1994"},
-      {"id": "4", "key": "email", "value": "oliiv@outlook.com"},
-      {"id": "5", "key": "skype", "value": "Revi"}
+      { "id": "1", "key": "birth", "value": "12-06-1994" },
+      { "id": "4", "key": "email", "value": "oliiv@outlook.com" },
+      { "id": "5", "key": "skype", "value": "Revi" }
     ],
     "img": {
       "link": "",
       "alt": ""
     },
-    "description": "I enjoy creating interactive applications that attract users"
+    "description": "I'm a thinker solutions, I use systems engineering to join the pieces in scalable projects. Lover of life, Esotericism"
   },
   "skills": {
     "title": "Skills",
     "skills": [
-      {"id": "1", "name": "HTML/CSS"},
-      {"id": "2", "name": "JavaScript"},
-      {"id": "3", "name": "React"},
-      {"id": "4", "name": "Redux"},
-      {"id": "5", "name": "Node"}
+      { "id": "1", "name": "HTML/CSS" },
+      { "id": "2", "name": "JavaScript" },
+      { "id": "3", "name": "React" },
+      { "id": "4", "name": "Redux" },
+      { "id": "5", "name": "Node" }
     ]
   },
   "experiences": {
