@@ -56,6 +56,7 @@ const ContainerHeader = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: #efefef;
 `
 const ContainerImg = styled.div`
   height: 44px;

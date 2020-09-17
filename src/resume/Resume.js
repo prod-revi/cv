@@ -1,18 +1,10 @@
 import React from 'react'
 import { default as data } from './data/cv.json'
 import styled from 'styled-components'
-import 'normalize.css'
-
-// import Head from './secciones/Head'
-// import About from './secciones/About'
-// import Skills from './secciones/Skills'
-// import Experiences from './secciones/Experiences'
-// import Educations from './secciones/Educations'
-// import Social from './secciones/Social'
-// import Projects from './secciones/Projects'
+import Loader from './components/Loader'
 
 const Head = React.lazy(() => import('./components/Head'))
-const About = React.lazy(() => import('./components/About'))
+const HowIAm = React.lazy(() => import('./components/HowIAm'))
 const Skills = React.lazy(() => import('./components/Skills'))
 const Experiences = React.lazy(() => import('./components/Experiences'))
 const Educations = React.lazy(() => import('./components/Educations'))
@@ -21,33 +13,26 @@ const Projects = React.lazy(() => import('./components/Projects'))
 
 function Cv() {
   // Lazy Objects
-  const { head, about, skills, experiences, educations, projects, social } = data
-
-  // Muestra <Spinner> hasta que OtherComponent cargue
-
-  // Aqui nos decidimos
-  // entonces carga cv o se prepara para ser editada
-  // miramos si tiene el nombre
-  // router
-
-  // aqui se asegura de que puede utilizar los ?
-
-  // Afuera o adentro papa pero en los dos lados no
-
-  // asi que a laburar se dijo
+  const { head, card, howIAm, skills, experiences, educations, projects, social } = data
 
   return (
-    <React.Suspense fallback='tu mama en tanga'>
+    <React.Suspense fallback={<Loader />}>
       <BackgroundContainer>
-        <CvContainer>
-          <Head head={head} />
-          <About about={about} />
-          <Skills skills={skills} />
-          <Experiences experiences={experiences} />
-          <Educations educations={educations} />
-          <Projects projects={projects} />
-          <Social social={social} />
-        </CvContainer>
+        <Container>
+          <Head head={head} card={card} />
+          <Separator>
+            <div>
+              <HowIAm howIAm={howIAm} />
+              <Experiences experiences={experiences} />
+              <Educations educations={educations} />
+            </div>
+            <div>
+              <Skills skills={skills} />
+              <Projects projects={projects} />
+              <Social social={social} />
+            </div>
+          </Separator>
+        </Container>
       </BackgroundContainer>
     </React.Suspense>
   )
@@ -57,7 +42,7 @@ const BackgroundContainer = styled.div`
   background-color: #efefef;
 `
 
-const CvContainer = styled.div`
+const Container = styled.div`
   width: 800px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -68,6 +53,10 @@ const CvContainer = styled.div`
   @media (max-width: 800px) {
     width: 100%;
   }
+`
+
+const Separator = styled.div`
+  display: flex;
 `
 
 export default Cv

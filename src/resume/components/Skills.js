@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components"
-import { Subtitle, ContainerSection } from '../../common'
+import React from 'react'
+import styled from 'styled-components'
+import { Subtitle, ContainerSection } from './common'
 
 function Skills(props) {
   const { title, skills } = props.skills
@@ -8,7 +8,7 @@ function Skills(props) {
     <ContainerSection>
       <Subtitle title={title} />
       <ContainerSkills>
-        {skills.map((skill) => {
+        {skills.map(skill => {
           const { id, name } = skill
           return (
             <SkillContainer key={id}>
@@ -18,23 +18,17 @@ function Skills(props) {
         })}
       </ContainerSkills>
     </ContainerSection>
-  );
+  )
 }
 
 const ContainerSkills = styled.div`
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  flex-direction: column;
 `
 
 const SkillContainer = styled.div`
-  margin: 5px;
-  display: inline-block;
-  border: 2px solid #6bdfdc;
-  padding: 10px 10px;
-  border-radius: 25px;
-  min-width: 100px;
-  text-align: center
+  margin-bottom: 0.5rem;
 `
 
-
-export default Skills;
+export default Skills
