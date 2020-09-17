@@ -1,16 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Subtitle, ContainerSection } from '../common'
+import { Subtitle, ContainerSection } from './common'
 
-
-function Experiences (props) {
-  const { title, items} = props.experiences
+function Experiences(props) {
+  const { title, items } = props.experiences
   return (
     <ContainerSection>
       <Subtitle title={title} withoutBackground />
       <>
-        {items.map((experience) => {
-          const {id, title, date, company, description} = experience
+        {items.map(experience => {
+          const { id, title, date, company, description } = experience
           return (
             <ExperienceContainer key={id}>
               <SpanStyled>{company}</SpanStyled>
@@ -31,7 +30,7 @@ const ExperienceContainer = styled.div`
   border-bottom: 1px solid #6bdfdc;
 
   &:last-child {
-  border-bottom: none;
+    border-bottom: none;
   }
 
   span {

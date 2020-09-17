@@ -1,16 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Subtitle, ContainerSection } from '../common'
+import { Subtitle, ContainerSection } from './common'
 
-
-function Educations (props) {
+function Educations(props) {
   const { title, items } = props.educations
   return (
     <ContainerSection>
       <Subtitle title={title} withoutBackground />
       <>
-        {items.map((edu) => {
-          const {school, title} = edu
+        {items.map(edu => {
+          const { school, title } = edu
           return (
             <EducationContainerItem key={edu.id}>
               <SpanStyled>{school}</SpanStyled>

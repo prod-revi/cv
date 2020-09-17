@@ -1,19 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Subtitle, ContainerSection } from '../common'
+import { Subtitle, ContainerSection } from './common'
 
 function Social(props) {
   const { social } = props
   return (
     <ContainerSection>
-      <Subtitle title="Social" withoutBackground />
+      <Subtitle title='Social' withoutBackground />
       <ContainerSocial>
-        {social.map((so) => {
+        {social.map(so => {
           const { id, media, description, link, srcImg } = so
           return (
             <ItemContainer key={id}>
-              <a href={link} >
-                <ImgMedia src ={srcImg} alt={`${media} ${description}`} />
+              <a href={link}>
+                <ImgMedia src={srcImg} alt={`${media} ${description}`} />
               </a>
             </ItemContainer>
           )
@@ -24,30 +24,22 @@ function Social(props) {
 }
 
 const ImgMedia = styled.img`
-  width: 50px;
+  width: 2rem;
 `
 
 const ItemContainer = styled.div`
-  width: 160px;
-  margin: 0 10px;
-  padding: 5px;
+  margin: 0 1rem;
   display: inline-block;
-  padding: 10px 10px;
-  border-radius: 25px;
 
   a {
     color: #333;
     text-decoration: none;
-  }
-
-  span {
-    display: block;
+    display: flex;
   }
 `
 
 const ContainerSocial = styled.div`
-  text-align: center;
-  padding-bottom: 25px;
+  display: flex;
 `
 
 export default Social
