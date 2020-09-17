@@ -1,12 +1,8 @@
-import React from 'react';
-import Cv from './cv'
+import React from 'react'
+import Resume from './resume'
 
 function App() {
-  return (
-    <div className="App">
-     <Cv />
-    </div>
-  );
+  return <Resume />
 }
 
-export default App;
+export default App
