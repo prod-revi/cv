@@ -14,24 +14,24 @@ function Subtitle(props) {
 }
 
 const SubtitleContainer = styled.div`
-  margin: 0;
-  text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+  position: relative;
 `
 
 const SubtitleElement = styled.h2`
-  margin: 0;
-  padding: 10px;
+  margin: 0 1rem;
   font-weight: 500;
   display: inline-block;
 
   &:after {
     content: '';
-    display: block;
-    height: 2px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
     background-color: #6bdfdc;
-    margin-top: 5px;
-    width: 125%;
+    width: 0.21rem;
   }
 `
 

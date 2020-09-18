@@ -40,7 +40,7 @@
       {
         "id": "2",
         "title": "UI/UX Developer",
-        "date": "2016 - 2019",
+        "date": "2016 february - 2019 febrary",
         "company": "Eulas S.A.",
         "description": "Maintaining the design and functionality of e-commerces located in United States, some of those companies: Ascena group, Stadium Goods, Children Place. Those are some technologies used for the projects: HTML5, CSS3, JS, AJAX, JQuery, Sass, Node.js, Express, React, Redux, OOP, Functional Programming, Jira, Scram, CMS, Webpack, Grunt. Some pages where I participate in Eulas:  https://www.louandgrey.com/ https://www.anntaylor.com/"
       }
@@ -51,13 +51,17 @@
     "items": [
       {
         "id": "1",
-        "school": "Colombia School of Industrial Carriers",
-        "title": "Engineering, System Engineering"
+        "school": "Escuela Colombiana de Carreras Industriales",
+        "title": "Engineering, System Engineering",
+        "description": "Hice 3 semestres de la carrera, aprendi sobre algoritmos de programacion, funciones, algebra, fisica, fundamentos de ingenieria ",
+        "dates": "2012 - 2014"
       },
       {
         "id": "2",
         "school": "Coder House",
-        "title": "Web Development, Front End Web Developer"
+        "title": "Web Development, Front End Web Developer",
+        "description": "Aprendi hacerca de paginas web, node, HTML, JS, CSS, bootstrap, jquery, APIs, animations, autoaprendizaje",
+        "dates": "2015 - 2016"
       }
     ]
   },
@@ -65,7 +69,11 @@
     "title": "Projects",
     "items": [
       {
-        "id": "1",
+        "title": "Rev Earth",
+        "url": "https://rev.earht",
+        "description": "Connect ideas between solutions appling knowlogies with everybody."
+      },
+      {
         "title": "CRM Seller",
         "url": "https://crm-seller-front.vercel.app/login",
         "description": "It is a project created for companies how want to see the follow-up of their sellers, follow the stock of the proudctos and see the sales orders."

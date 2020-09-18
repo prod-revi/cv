@@ -10,6 +10,7 @@ const Experiences = React.lazy(() => import('./components/Experiences'))
 const Educations = React.lazy(() => import('./components/Educations'))
 const Social = React.lazy(() => import('./components/Social'))
 const Projects = React.lazy(() => import('./components/Projects'))
+const Footer = React.lazy(() => import('./components/Footer'))
 
 function Cv() {
   // Lazy Objects
@@ -32,6 +33,7 @@ function Cv() {
               <Social social={social} />
             </div>
           </Separator>
+          <Footer />
         </Container>
       </BackgroundContainer>
     </React.Suspense>
@@ -50,6 +52,8 @@ const Container = styled.div`
     0 4px 8px rgba(107, 223, 220, 0.07), 0 8px 16px rgba(107, 223, 220, 0.07),
     0 16px 32px rgba(107, 223, 220, 0.07), 0 32px 64px rgba(107, 223, 220, 0.07);
 
+  padding-bottom: 4rem;
+
   @media (max-width: 800px) {
     width: 100%;
   }
@@ -57,6 +61,10 @@ const Container = styled.div`
 
 const Separator = styled.div`
   display: flex;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `
 
 export default Cv
