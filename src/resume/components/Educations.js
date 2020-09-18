@@ -9,11 +9,14 @@ function Educations(props) {
       <Subtitle title={title} withoutBackground />
       <>
         {items.map(edu => {
-          const { school, title } = edu
+          const { school, title, description, dates } = edu
           return (
             <EducationContainerItem key={edu.id}>
               <SpanStyled>{school}</SpanStyled>
-              <span>{title}</span>
+              <ContainerTitleDescription>
+                <span>{title}</span> <span>{dates}</span>
+              </ContainerTitleDescription>
+              <div>{description}</div>
             </EducationContainerItem>
           )
         })}
@@ -21,6 +24,12 @@ function Educations(props) {
     </ContainerSection>
   )
 }
+
+const ContainerTitleDescription = styled.div`
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+`
 
 const EducationContainerItem = styled.div`
   display: block;

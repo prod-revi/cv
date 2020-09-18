@@ -53,14 +53,14 @@
         "id": "1",
         "school": "Escuela Colombiana de Carreras Industriales",
         "title": "Engineering, System Engineering",
-        "description": "Hice 3 semestres de la carrera, aprendi sobre algoritmos de programacion, funciones, algebra, fisica, fundamentos de ingenieria ",
+        "description": "I did 3 semesters of the degree, I learned about programming algorithms, functions, algebra, physics, fundamentals of engineering",
         "dates": "2012 - 2014"
       },
       {
         "id": "2",
         "school": "Coder House",
         "title": "Web Development, Front End Web Developer",
-        "description": "Aprendi hacerca de paginas web, node, HTML, JS, CSS, bootstrap, jquery, APIs, animations, autoaprendizaje",
+        "description": "I learned about web pages, node, HTML, JS, CSS, bootstrap, jquery, APIs, animations, improve my self-study",
         "dates": "2015 - 2016"
       }
     ]
