@@ -23,6 +23,8 @@ const Resume = () => {
 
 const Background = styled.div`
   background: ${({ theme }) => theme.colors.background};
+  font-size: 1.2em;
+  line-height: 1.5em;
 `
 
 export default Resume
