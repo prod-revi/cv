@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Subtitle, ContainerSection } from './common'
+import { Subtitle, ContainerSection } from '../common'
 
 function Educations(props) {
   const { title, items } = props.educations
@@ -11,7 +11,7 @@ function Educations(props) {
         {items.map(edu => {
           const { school, title, description, dates } = edu
           return (
-            <EducationContainerItem key={edu.id}>
+            <EducationContainerItem key={Math.random()}>
               <SpanStyled>{school}</SpanStyled>
               <ContainerTitleDescription>
                 <span>{title}</span> <span>{dates}</span>
@@ -26,9 +26,9 @@ function Educations(props) {
 }
 
 const ContainerTitleDescription = styled.div`
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 2rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 `
 
 const EducationContainerItem = styled.div`

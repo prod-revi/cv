@@ -1,37 +1,45 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import PrivateRoute from './Private'
+import Loader from '../components/Loader'
 
-import Header from '../components/Header'
-import PublicPage from '../pages/PublicPage'
-import LoginPage from '../pages/LoginPage'
-import ProtectedPage from '../pages/ProtectedPage'
-import Resume from '../Resume'
+const PrivateRoute = React.lazy(() => import('./Private'))
+
+const Header = React.lazy(() => import('../components/Header'))
+const PublicPage = React.lazy(() => import('../pages/PublicPage'))
+const LoginPage = React.lazy(() => import('../pages/LoginPage'))
+const ProtectedPage = React.lazy(() => import('../pages/ProtectedPage'))
+const Resume = React.lazy(() => import('../pages/ResumePage'))
 
 export default function AuthExample() {
   return (
     <Router>
-      <div>
-        <React.Suspense fallback='tu mama en tanga'>
-          <Header />
-        </React.Suspense>
+      <React.Suspense fallback={<Loader />}>
+        <Header />
+      </React.Suspense>
 
-        <Switch>
-          <Route exact path='/'>
+      <Switch>
+        <Route exact path='/'>
+          <React.Suspense fallback={<Loader />}>
             <Resume />
-          </Route>
-          <Route path='/public'>
+          </React.Suspense>
+        </Route>
+        <Route path='/public'>
+          <React.Suspense fallback={<Loader />}>
             <PublicPage />
-          </Route>
-          <Route path='/login'>
+          </React.Suspense>
+        </Route>
+        <Route path='/login'>
+          <React.Suspense fallback={<Loader />}>
             <LoginPage />
-          </Route>
-          <PrivateRoute path='/protected'>
+          </React.Suspense>
+        </Route>
+        <PrivateRoute path='/protected'>
+          <React.Suspense fallback={<Loader />}>
             <ProtectedPage />
-          </PrivateRoute>
-        </Switch>
-      </div>
+          </React.Suspense>
+        </PrivateRoute>
+      </Switch>
     </Router>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Subtitle, ContainerSection } from './common'
+import { Subtitle, ContainerSection } from '../common'
 import styled from 'styled-components'
 
 const Projects = ({ projects }) => {
@@ -11,7 +11,7 @@ const Projects = ({ projects }) => {
         {items.map(i => {
           const { url, title, description } = i
           return (
-            <ContainerProject key={i.id}>
+            <ContainerProject key={Math.random()}>
               {/* eslint-disable-next-line react/jsx-no-target-blank */}
               <a href={url} target='_blank'>
                 <svg fill='currentColor' viewBox='0 0 20 20'>
