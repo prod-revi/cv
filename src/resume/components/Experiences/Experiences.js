@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Subtitle, ContainerSection } from './common'
+import { Subtitle, ContainerSection } from '../common'
 
 function Experiences(props) {
   const { title, items } = props.experiences
@@ -9,9 +9,9 @@ function Experiences(props) {
       <Subtitle title={title} withoutBackground />
       <>
         {items.map(experience => {
-          const { id, title, date, company, description } = experience
+          const { title, date, company, description } = experience
           return (
-            <ExperienceContainer key={id}>
+            <ExperienceContainer key={Math.random()}>
               <SpanStyled>{company}</SpanStyled>
               <span>{title}</span>
               <span>{date}</span>

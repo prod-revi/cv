@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Subtitle, ContainerSection } from './common'
+import { Subtitle, ContainerSection } from '../common'
 
 function HowIAm({ howIAm }) {
   const { title, description } = howIAm

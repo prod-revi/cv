@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Subtitle, ContainerSection } from './common'
+import { Subtitle, ContainerSection } from '../common'
 
 function Skills(props) {
   const { title, skills } = props.skills
@@ -9,10 +9,11 @@ function Skills(props) {
       <Subtitle title={title} />
       <ContainerSkills>
         {skills.map(skill => {
-          const { id, name } = skill
+          const { name, time } = skill
           return (
-            <SkillContainer key={id}>
+            <SkillContainer key={Math.random()}>
               <span>{name}</span>
+              <span>{time}</span>
             </SkillContainer>
           )
         })}
@@ -28,7 +29,21 @@ const ContainerSkills = styled.div`
 `
 
 const SkillContainer = styled.div`
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 'a0 b0';
+  gap: 0 0.5rem;
+
+  span {
+    &:first-child {
+      grid-area: a0 / a0 / a0 / a0;
+    }
+
+    &:last-child {
+      grid-area: b0 / b0 / b0 / b0;
+    }
+  }
 `
 
 export default Skills

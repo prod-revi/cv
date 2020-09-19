@@ -1,18 +1,28 @@
 import React from 'react'
 import Routing from './core/Routing'
+import styled, { ThemeProvider } from 'styled-components'
 import { Provider } from 'react-redux'
 import store from './redux/store'
 import 'normalize.css'
-import './initialStyles.css'
+import './static/initialStyles.css'
+import theme from './static/theme.json'
 
 const Resume = () => {
   return (
     <React.StrictMode>
-      <Provider store={store}>
-        <Routing />
-      </Provider>
+      <ThemeProvider theme={theme || {}}>
+        <Provider store={store}>
+          <Background>
+            <Routing />
+          </Background>
+        </Provider>
+      </ThemeProvider>
     </React.StrictMode>
   )
 }
+
+const Background = styled.div`
+  background: ${({ theme }) => theme.colors.background};
+`
 
 export default Resume

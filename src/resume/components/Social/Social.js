@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Subtitle, ContainerSection } from './common'
+import { Subtitle, ContainerSection } from '../common'
 
 function Social(props) {
   const { social } = props
@@ -9,9 +9,9 @@ function Social(props) {
       <Subtitle title='Social' withoutBackground />
       <ContainerSocial>
         {social.map(so => {
-          const { id, media, description, link, srcImg } = so
+          const { media, description, link, srcImg } = so
           return (
-            <ItemContainer key={id}>
+            <ItemContainer key={Math.random()}>
               <a href={link}>
                 <ImgMedia src={srcImg} alt={`${media} ${description}`} />
               </a>
