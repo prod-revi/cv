@@ -4,8 +4,8 @@ import styled from 'styled-components'
 const Loader = () => {
   return (
     <Container>
-      <div class='container-loader'>
-        <div class='loader'></div>
+      <div className='container-loader'>
+        <div className='loader'></div>
       </div>
     </Container>
   )

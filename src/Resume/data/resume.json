@@ -14,7 +14,7 @@
   },
   "howIAm": {
     "title": "How I am",
-    "description": "I'm a thinker solutions, I use systems engineering to join the pieces in scalable projects. Lover of life, Esotericism"
+    "description": "I'm a fast thinker solutions, I use my systems engineering skills to realize complex and scalable projects.\n I am a working self driven and autonomously. As self-educated person I learn fast and understand complex matters."
   },
   "skills": {
     "title": "Skills",
@@ -32,15 +32,15 @@
     "items": [
       {
         "title": "Front End Engineer",
-        "date": "2019 march - actual",
+        "date": "March 2019 to Actual",
         "company": "Wenance",
-        "description": "Solution thinker, using engineering to bring ideas to life in scalable projects, with internal projects how move, save and process the information of the clients and the applications that offer Financial products,  using multiple languages as React, Redux, Node, JS, Styles CSS // Sass with styled components, API REST."
+        "description": "Solution thinker and provider, with my engineering capabilities complex projects in the Financial industry will be brought to life.\n In internal projects, applications and multiple lenguages are used like React, Redux, Node, JS, Styles CSS // Sass with styled components, API REST."
       },
       {
         "title": "UI/UX Developer",
-        "date": "2016 february - 2019 febrary",
+        "date": "February 2016 - Febrary 2019",
         "company": "Eulas S.A.",
-        "description": "Maintaining the design and functionality of e-commerces located in United States, some of those companies: Ascena group, Stadium Goods, Children Place. Those are some technologies used for the projects: HTML5, CSS3, JS, AJAX, JQuery, Sass, Node.js, Express, React, Redux, OOP, Functional Programming, Jira, Scram, CMS, Webpack, Grunt. Some pages where I participate in Eulas:  https://www.louandgrey.com/ https://www.anntaylor.com/"
+        "description": "Maintaining the design and functionality of e-commerces.\n The business was located in United States of America, Projects were realized with the following companies: Ascena group, Stadium Goods, Children Place.\n The following technologies were used for the projects: HTML5, CSS3, JS, AJAX, JQuery, Sass, Node.js, Express, React, Redux, OOP, Functional Programming, Jira, Scram, CMS, Webpack, Grunt.\n Some examples of my work with Eulas:  https://www.louandgrey.com/ https://www.anntaylor.com/ \n Kaban and Scrum as agile working methos are used in the projects above."
       }
     ]
   },
@@ -50,13 +50,13 @@
       {
         "school": "Escuela Colombiana de Carreras Industriales",
         "title": "Engineering, System Engineering",
-        "description": "I did 3 semesters of the degree, I learned about programming algorithms, functions, algebra, physics, fundamentals of engineering",
+        "description": "3 semesters of studies to reach the engineering degree, The content of the studies were programming algorithms, functions, algebra, physics, fundamentals of engineering.",
         "dates": "2012 - 2014"
       },
       {
         "school": "Coder House",
         "title": "Web Development, Front End Web Developer",
-        "description": "I learned about web pages, node, HTML, JS, CSS, bootstrap, jquery, APIs, animations, improve my self-study",
+        "description": "Creation and design of web pages with HTML5, JS, CSS, bootstrap, jquery, APIs, animations. As self-educated person I improved my professional skills.",
         "dates": "2015 - 2016"
       }
     ]

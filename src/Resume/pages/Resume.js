@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { default as data } from '../data/cv.json'
+import { default as data } from '../data/resume.json'
 import Loader from '../components/Loader'
 
 const Head = React.lazy(() => import('../components/Head'))
@@ -12,8 +12,7 @@ const Social = React.lazy(() => import('../components/Social'))
 const Projects = React.lazy(() => import('../components/Projects'))
 const Footer = React.lazy(() => import('../components/Footer'))
 
-function Cv() {
-  // Lazy Objects
+function Resume() {
   const { head, card, howIAm, skills, experiences, educations, projects, social } = data
 
   return (
@@ -28,8 +27,8 @@ function Cv() {
               <Educations educations={educations} />
             </div>
             <ContainerSectionTwo>
-              <Skills skills={skills} />
               <Projects projects={projects} />
+              <Skills skills={skills} />
               <Social social={social} />
             </ContainerSectionTwo>
           </Separator>
@@ -51,39 +50,54 @@ const Container = styled.div`
     0 4px 8px rgba(107, 223, 220, 0.07), 0 8px 16px rgba(107, 223, 220, 0.07),
     0 16px 32px rgba(107, 223, 220, 0.07), 0 32px 64px rgba(107, 223, 220, 0.07);
 
-  padding-bottom: 4rem;
-
   @media (max-width: 800px) {
     width: 100%;
   }
 `
 
 const Separator = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas: 'a0 a0 a0 a0 a0 a0 b0 b0 b0 b0';
+
+  padding: 3rem 3rem 4rem 3rem;
+
+  > div:first-child {
+    grid-area: a0;
+  }
+
+  > div:last-child {
+    grid-area: b0;
+  }
 
   @media (max-width: 800px) {
+    display: flex;
     flex-direction: column;
   }
 `
 
 const ContainerSectionTwo = styled.div`
+  padding-left: 3rem;
+
   @media (max-width: 800px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 'a0 b0 c0';
+    grid-template-areas: 'a0 a0' 'b0 c0';
 
-    &::first-child {
-      grid-area: a0 / a0 / a0 / a0;
+    padding-left: 0;
+
+    > div:first-child {
+      grid-area: a0;
     }
 
-    &::nth-child(1) {
-      grid-area: b0 / b0 / b0 / b0;
+    > div:nth-child(2) {
+      grid-area: b0;
     }
 
-    &::last-child {
-      grid-area: c0 / c0 / c0 / c0;
+    > div:last-child {
+      grid-area: c0;
     }
   }
 `
 
-export default Cv
+export default Resume

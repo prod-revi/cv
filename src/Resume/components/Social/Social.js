@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Subtitle, ContainerSection } from '../common'
+import { Subtitle } from '../common'
 
 function Social(props) {
   const { social } = props
   return (
-    <ContainerSection>
+    <Container>
       <Subtitle title='Social' withoutBackground />
       <ContainerSocial>
         {social.map(so => {
@@ -19,9 +19,15 @@ function Social(props) {
           )
         })}
       </ContainerSocial>
-    </ContainerSection>
+    </Container>
   )
 }
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+`
 
 const ImgMedia = styled.img`
   width: 2rem;

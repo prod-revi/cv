@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Subtitle, ContainerSection } from '../common'
+import { Subtitle } from '../common'
 
 function Educations(props) {
   const { title, items } = props.educations
   return (
-    <ContainerSection>
+    <Container>
       <Subtitle title={title} withoutBackground />
       <>
         {items.map(edu => {
@@ -21,9 +21,15 @@ function Educations(props) {
           )
         })}
       </>
-    </ContainerSection>
+    </Container>
   )
 }
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+`
 
 const ContainerTitleDescription = styled.div`
   margin: 0.5rem 0 2rem;

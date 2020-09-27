@@ -6,10 +6,10 @@ import Loader from '../components/Loader'
 const PrivateRoute = React.lazy(() => import('./Private'))
 
 const Header = React.lazy(() => import('../components/Header'))
-const PublicPage = React.lazy(() => import('../pages/PublicPage'))
-const LoginPage = React.lazy(() => import('../pages/LoginPage'))
-const ProtectedPage = React.lazy(() => import('../pages/ProtectedPage'))
-const Resume = React.lazy(() => import('../pages/ResumePage'))
+const PublicPage = React.lazy(() => import('../pages/Public'))
+const LoginPage = React.lazy(() => import('../pages/Login'))
+const ProtectedPage = React.lazy(() => import('../pages/Protected'))
+const Resume = React.lazy(() => import('../pages/Resume'))
 
 export default function AuthExample() {
   return (
