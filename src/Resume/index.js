@@ -4,7 +4,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import { Provider } from 'react-redux'
 import store from './redux/store'
 import 'normalize.css'
-import './static/initialStyles.css'
+import './static/styles.css'
 import theme from './static/theme.json'
 
 const Resume = () => {
