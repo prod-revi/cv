@@ -4,12 +4,16 @@ import { Subtitle } from '../common'
 
 function Experiences(props) {
   const { title, items } = props.experiences
+
   return (
     <Container>
       <Subtitle title={title} withoutBackground />
       <>
         {items.map(experience => {
           const { title, date, company, description } = experience
+
+          const descrip = description.split(/\r\n|\r|\n/) || []
+
           return (
             <ExperienceContainer key={Math.random()}>
               <SpanStyled>{company}</SpanStyled>
@@ -17,7 +21,9 @@ function Experiences(props) {
                 <span>As a {title}</span>
                 <span>from {date}</span>
               </ContainerTitleDescription>
-              <p>{description}</p>
+              {descrip.map(text => (
+                <p>{text}</p>
+              ))}
             </ExperienceContainer>
           )
         })}

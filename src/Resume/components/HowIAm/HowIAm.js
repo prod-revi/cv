@@ -4,10 +4,17 @@ import { Subtitle } from '../common'
 
 function HowIAm({ howIAm }) {
   const { title, description } = howIAm
+
+  const descrip = description.split(/\r\n|\r|\n/) || []
+
   return (
     <Container>
       {title && <Subtitle>{title}</Subtitle>}
-      <ContainerDescription>{description && description}</ContainerDescription>
+      <ContainerDescription>
+        {descrip.map(text => (
+          <p>{text}</p>
+        ))}
+      </ContainerDescription>
     </Container>
   )
 }
