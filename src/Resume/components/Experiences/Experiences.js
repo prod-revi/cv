@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Subtitle, ContainerSection } from '../common'
+import { Subtitle } from '../common'
 
 function Experiences(props) {
   const { title, items } = props.experiences
   return (
-    <ContainerSection>
+    <Container>
       <Subtitle title={title} withoutBackground />
       <>
         {items.map(experience => {
@@ -13,16 +13,24 @@ function Experiences(props) {
           return (
             <ExperienceContainer key={Math.random()}>
               <SpanStyled>{company}</SpanStyled>
-              <span>{title}</span>
-              <span>{date}</span>
+              <ContainerTitleDescription>
+                <span>As a {title}</span>
+                <span>from {date}</span>
+              </ContainerTitleDescription>
               <p>{description}</p>
             </ExperienceContainer>
           )
         })}
       </>
-    </ContainerSection>
+    </Container>
   )
 }
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+`
 
 const ExperienceContainer = styled.div`
   margin: 10px 10px 20px;
@@ -42,6 +50,11 @@ const SpanStyled = styled.span`
   text-transform: uppercase;
   /* font-style: italic; */
   font-weight: 600;
+`
+
+const ContainerTitleDescription = styled.div`
+  margin: 0.5rem 0 2rem;
+  display: flex;
 `
 
 export default Experiences

@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Subtitle, ContainerSection } from '../common'
+import { Subtitle } from '../common'
 
 function Skills(props) {
   const { title, skills } = props.skills
   return (
-    <ContainerSection>
+    <Container>
       <Subtitle title={title} />
       <ContainerSkills>
         {skills.map(skill => {
@@ -18,14 +18,21 @@ function Skills(props) {
           )
         })}
       </ContainerSkills>
-    </ContainerSection>
+    </Container>
   )
 }
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+`
 
 const ContainerSkills = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  padding: 10px;
 `
 
 const SkillContainer = styled.div`

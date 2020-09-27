@@ -1,11 +1,11 @@
 import React from 'react'
-import { Subtitle, ContainerSection } from '../common'
+import { Subtitle } from '../common'
 import styled from 'styled-components'
 
 const Projects = ({ projects }) => {
   const { title, items } = projects
   return (
-    <ContainerSection>
+    <Container>
       <Subtitle title={title} withoutBackground />
       <>
         {items.map(i => {
@@ -27,9 +27,15 @@ const Projects = ({ projects }) => {
           )
         })}
       </>
-    </ContainerSection>
+    </Container>
   )
 }
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+`
 
 const ContainerProject = styled.div`
   padding: 10px;

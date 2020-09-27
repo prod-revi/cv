@@ -26,10 +26,8 @@ function Resume() {
               <Experiences experiences={experiences} />
               <Educations educations={educations} />
             </div>
-            <div>
-              <Projects projects={projects} />
-            </div>
             <ContainerSectionTwo>
+              <Projects projects={projects} />
               <Skills skills={skills} />
               <Social social={social} />
             </ContainerSectionTwo>
@@ -52,37 +50,52 @@ const Container = styled.div`
     0 4px 8px rgba(107, 223, 220, 0.07), 0 8px 16px rgba(107, 223, 220, 0.07),
     0 16px 32px rgba(107, 223, 220, 0.07), 0 32px 64px rgba(107, 223, 220, 0.07);
 
-  padding-bottom: 4rem;
-
   @media (max-width: 800px) {
     width: 100%;
   }
 `
 
 const Separator = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas: 'a0 a0 a0 a0 a0 a0 b0 b0 b0 b0';
+
+  padding: 3rem 3rem 4rem 3rem;
+
+  > div:first-child {
+    grid-area: a0;
+  }
+
+  > div:last-child {
+    grid-area: b0;
+  }
 
   @media (max-width: 800px) {
+    display: flex;
     flex-direction: column;
   }
 `
 
 const ContainerSectionTwo = styled.div`
+  padding-left: 3rem;
+
   @media (max-width: 800px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 'a0 c0' 'b0';
+    grid-template-areas: 'a0 a0' 'b0 c0';
 
-    > div::first-child {
-      grid-area: a0 / a0 / a0 / a0;
+    padding-left: 0;
+
+    > div:first-child {
+      grid-area: a0;
     }
 
-    > div::nth-child(1) {
-      grid-area: b0 / b0 / b0 / b0;
+    > div:nth-child(2) {
+      grid-area: b0;
     }
 
-    > div::last-child {
-      grid-area: c0 / c0 / c0 / c0;
+    > div:last-child {
+      grid-area: c0;
     }
   }
 `

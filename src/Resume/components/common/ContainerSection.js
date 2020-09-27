@@ -6,6 +6,8 @@ function ContainerSection(props) {
 }
 
 const ContainerSectionStyle = styled.div`
-  padding: 2rem 2rem 0.5rem;
+  padding: 5rem 3rem 0 3rem;
+  /* padding-top: 5rem;
+  padding-bottom: 0; */
 `
 export default ContainerSection
