@@ -18,12 +18,19 @@
       { "name": "JavaScript", "time": "5 years" },
       { "name": "REST API", "time": "5 years" },
       { "name": "Mongo db", "time": "3 years" },
-      { "name": "GraphQL", "time": "1 year" }
+      { "name": "GraphQL", "time": "2 year" }
     ]
   },
   "experiences": {
     "title": "Experiences",
     "items": [
+      {
+        "title": "UX Senior Developer",
+        "date": "December 2020",
+        "company": "Making Sense",
+
+        "description": "My responsibility are to be a conexion between Designers and Developers, My hability is to explain my opions about user experience, design and  software. Investigate the way of develop front end behavior and interaction with back end, check apropiate and undertanding code and agree for easy and excelent interface with my teams.  \n  React, Redux, TypeScript, StyleComponents, Figma, Sketch, Jira, SCRAM"
+      },
       {
         "title": "Front End Engineer",
         "date": "March 2019 - September 2020",
@@ -60,8 +67,8 @@
     "items": [
       {
         "title": "Rev Earth",
-        "url": "https://rev.earht",
-        "description": "The Idea of this web is to connect people and information."
+        "url": "https://rev.earth/",
+        "description": "Rev Earth works by connecting people to improve awareness"
       },
       {
         "title": "CRM Seller",
@@ -71,7 +78,7 @@
       {
         "title": "Tic Tac Toe",
         "url": "https://tic-tac-toe.rev.earth/",
-        "description": "Tic Tac Toe game with minmax and alpha beta logic"
+        "description": "Tic Tac Toe Game was developed with IA, you can play vs Computer, use minmax and alpha beta logic"
       }
     ]
   },
