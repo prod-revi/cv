@@ -25,11 +25,16 @@
     "title": "Experiences",
     "items": [
       {
+        "title": "Leader",
+        "date": "February 2020",
+        "company": "Dev Base - Zuro",
+        "description": "As the leader responsible for the Zuro team, I am in charge of 8 developers highlighted by, backend, frond end and DevOps. The technologies we use in Zuro are Node.js, Squalize, MySql for the backend and React with Styled Components using Hooks for the front. Our architecture is orchestrated with Docker and aws ECS."
+      },
+      {
         "title": "UX Senior Developer",
         "date": "December 2020",
         "company": "Making Sense",
-
-        "description": "My responsibility is to be a conexion between Designers and Developers, My hability is to explain my opinions about user experience, design and  software. Investigate the way of develop front end behavior and interaction with back end, check apropiate and undertanding code and agree for easy and excelent interface with my teams.  \n  React, Redux, TypeScript, StyleComponents, Figma, Sketch, Jira, SCRAM"
+        "description": "My responsibility was to be a connection between Designers and Developers, One of my Skills was to make my opinions known about user experience, design and  software. Research in severals ways of Design, develop front end behavior and interaction with back end, decide appropriate approach code and agree for easy and excellent interface with my teams.  \n  React, Redux, TypeScript, StyleComponents, Figma, Sketch, Jira, SCRAM"
       },
       {
         "title": "Front End Engineer",
