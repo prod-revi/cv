@@ -12,17 +12,17 @@ function Experiences(props) {
         {items.map(experience => {
           const { title, date, company, description } = experience
 
-          const descrip = description.split(/\r\n|\r|\n/) || []
+          const description_splited = description.split(/\r\n|\r|\n/) || []
 
           return (
-            <ExperienceContainer key={Math.random()}>
+            <ExperienceContainer key={Math.random() * 15}>
               <SpanStyled>{company}</SpanStyled>
               <ContainerTitleDescription>
                 <span>{title}</span>
                 <span>{date}</span>
               </ContainerTitleDescription>
-              {descrip.map(text => (
-                <p>{text}</p>
+              {description_splited.map(text => (
+                <p key={Math.random() * 9}>{text}</p>
               ))}
             </ExperienceContainer>
           )

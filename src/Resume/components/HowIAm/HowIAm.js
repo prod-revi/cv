@@ -9,10 +9,10 @@ function HowIAm({ howIAm }) {
 
   return (
     <Container>
-      {title && <Subtitle>{title}</Subtitle>}
+      <Subtitle title={title} />
       <ContainerDescription>
         {descrip.map(text => (
-          <p>{text}</p>
+          <p key={Math.random() * 9}>{text}</p>
         ))}
       </ContainerDescription>
     </Container>
