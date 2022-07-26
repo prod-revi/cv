@@ -13,19 +13,15 @@ export const Edition = ({ description }) => {
     refElement
   } = useEdition(description)
 
-  const descriptionSplited = value.split(/\r\n|\r|\n/) || []
-
   return (
     <ContainerDescription width={sizes.offsetWidth} height={sizes.offsetHeight}>
       {availableToEdit ? (
         <textarea onChange={handleWriting} onDoubleClick={handleClickSave} value={value} />
       ) : (
         <>
-          <div ref={refElement} onDoubleClick={handleClickActiveEdition}>
-            {descriptionSplited.map(text => (
-              <p key={Math.random() * 9}>{text}</p>
-            ))}
-          </div>
+          <p ref={refElement} onDoubleClick={handleClickActiveEdition}>
+            {value}
+          </p>
         </>
       )}
     </ContainerDescription>
@@ -34,6 +30,16 @@ export const Edition = ({ description }) => {
 
 const ContainerDescription = styled.div`
   margin: 10px 10px 20px;
+
+  br {
+    font-size: 1em;
+    font-size: 1.5em;
+  }
+
+  p {
+    margin: 0;
+    white-space: pre-wrap;
+  }
 
   textarea {
     white-space: pre-wrap;
@@ -48,7 +54,7 @@ const ContainerDescription = styled.div`
     padding: 0;
 
     ${({ width, height }) => `
-      width: ${width * 2}px;
+      width: ${width}px;
       height: ${height}px;
     `}
   }
