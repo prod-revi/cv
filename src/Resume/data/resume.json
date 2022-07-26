@@ -13,12 +13,11 @@
   "skills": {
     "title": "Skills",
     "skills": [
-      { "name": "React", "time": "5 years" },
-      { "name": "Redux", "time": "5 years " },
-      { "name": "JavaScript", "time": "5 years" },
-      { "name": "REST API", "time": "5 years" },
-      { "name": "Mongo db", "time": "3 years" },
-      { "name": "GraphQL", "time": "2 year" }
+      { "name": "React", "time": "7 years" },
+      { "name": "Redux", "time": "7 years " },
+      { "name": "Typescipt", "time": "5 years" },
+      { "name": "REST API", "time": "8 years" },
+      { "name": "GraphQL", "time": "4 years" }
     ]
   },
   "experiences": {
