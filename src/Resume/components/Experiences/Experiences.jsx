@@ -12,8 +12,6 @@ function Experiences(props) {
         {items.map(experience => {
           const { title, date, company, description } = experience
 
-          const description_splited = description.split(/\r\n|\r|\n/) || []
-
           return (
             <ExperienceContainer key={Math.random() * 15}>
               <SpanStyled>{company}</SpanStyled>
@@ -21,9 +19,7 @@ function Experiences(props) {
                 <span>{title}</span>
                 <span>{date}</span>
               </ContainerTitleDescription>
-              {description_splited.map(text => (
-                <p key={Math.random() * 9}>{text}</p>
-              ))}
+              <p>{description}</p>
             </ExperienceContainer>
           )
         })}
@@ -49,6 +45,10 @@ const ExperienceContainer = styled.div`
 
   span {
     margin-right: 20px;
+  }
+
+  p {
+    white-space: pre-wrap;
   }
 `
 

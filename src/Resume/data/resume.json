@@ -8,7 +8,7 @@
   },
   "howIAm": {
     "title": "Who I am",
-    "description": "Solution-seeking is my forte. With my skills and experience, I am able to achieve a wide range of complex and scalable projects.\n Through the application of new knowledge, I am always seeking to improve my services."
+    "description": "I am able to achieve a wide range of complex and scalable projects.\n\nI am responsable for : \nunderstand the business problem, \nconvert that problem into an architecture, \nconvert the architecture into a solution, \ntest the solution, and \ndeploy the solution."
   },
   "skills": {
     "title": "Skills",
@@ -27,7 +27,7 @@
         "title": "Leader",
         "date": "February 2020",
         "company": "Dev Base",
-        "description": "My responsibilities include leading the Zuro team, which consists of 8 developers, including those responsible for backend, front end, and DevOps."
+        "description": "Description of what I did in DevBase. \n\nI was responsible for:\nTeamwork - Senior Front End\nconstruction company, shows its clients its services\nusing React as technology and implementing in aws\ndevelop the designs proposed by the design team\nand testing together with the project manager and QA team\nWe put the product into production.\n\nI was responsible for:\nZuro - Technical Leader\ncompany for the transaction of money between companies\nTransfer of an already created architecture\ncontinued with the product that had already been assembled\ntaking it to the stage and production environments\nWe show the product to our client, preparing it for commercial production\n\n\nI was responsible for:\nTandym - Front End for Seniors\npayment method that is implemented in online stores, mainly as a plugin\nthe architecture is based on aws services, Front end: Next, React, Redux, DockerBackend: Nest, Mysql, Docker\nUsing these tools together with the Front End and Backend team, we have created a payment method available for different platforms.\nverifying the correct operation step by step\nand according to product planning\nto commercial production\nWe go to production on the agreed dates"
       },
       {
         "title": "UX Senior Developer",
@@ -82,7 +82,7 @@
       {
         "title": "Tic Tac Toe",
         "url": "https://tic-tac-toe.rev.earth/",
-        "description": "Using minmax and alpha beta logic, the Tic Tac Toe Game can be played against the computer and against other players."
+        "description": "You! Beat it! \n Unbeatable Tic-Tac-Toe game using AI will try to beat you! Tecnologies: React and Minimax Algorithm and Alpha Beta."
       }
     ]
   },
