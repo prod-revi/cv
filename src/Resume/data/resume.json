@@ -8,7 +8,7 @@
   },
   "howIAm": {
     "title": "Who I am",
-    "description": "I am able to achieve a wide range of complex and scalable projects.\n\nI am responsable for : \nunderstand the business problem, \nconvert that problem into an architecture, \nconvert the architecture into a solution, \ntest the solution, and \ndeploy the solution."
+    "description": "I am able to achieve a wide range of complex and scalable projects.\n\nMy responsibilities are: \nunderstanding the business problem, \nconverting it into an architecture, \ntransforming the architecture into a solution, \ntesting the solution, and deploying it."
   },
   "skills": {
     "title": "Skills",
@@ -27,13 +27,13 @@
         "title": "Frontend Lead",
         "date": "February 2021 - now ",
         "company": "Dev Base",
-        "description": "As part of the development team of Devbase, I participated in three projects aimed at growing the technological services of startups. \n\nI was responsible for:\nTeamwork - Senior Frontend \nconstruction company, shows its clients its services\nusing React as technology and implementing in aws\ndevelop the designs proposed by the design team\nand testing together with the project manager and QA team\nWe put the product into production.\n\nI was responsible for:\nZuro - Technical Leader\ncompany for the transaction of money between companies\nTransfer of an already created architecture\ncontinued with the product that had already been assembled\ntaking it to the stage and production environments\nWe show the product to our client, preparing it for commercial production\n\n\nI was responsible for:\n Tandym - Frontend Senior \nTandym offer a payment method implemented in Merchants as a plugin, \nthe architecture is based on aws services, with Frontend and \nBackend as a Docker images in aws clusters.  \nUsing these tools together with the Frontend and Backend team, we have created a payment method available for different platforms. \nverifying the correct operation step by step \nand according to product planning \nto commercial production \nWe go to production on the agreed dates. \n\nTechnology stack: Node.js, Nestjs, Nextjs, React, Redux, JavaScript, Typescript, AWS, Docker, Github, CI/CD, MySql, Prisma."
+        "description": "As part of the development team of Devbase, I participated in three projects aimed at growing the technological services of startups. \n\nTeamwork - Senior Frontend \nI was responsible for cooperating with the construction company of online services, showing its clients its services\nusing React as technology and implementing it in AWS.\nIn addition, I developed the designs proposed by the UX/UI team and tested it together with the project manager and QA.\nFinally, we launched the product successfully.\n\nZuro - Technical Leader\nI was responsible for innovating technology stack for the transaction of money between companies, the transfer of an already created architecture, continuing with the product that had already been assembled and taking it to the stage and production environments. \nPreparing the product for commercial production involved working closely with the client. \n\nTandym - Senior Frontend \nI was responsible for understanding the idea of tandym and providing the tools for creating the payment method. \nThis architecture was based on AWS services, with Frontend and Backend as a Docker images in AWS clusters. \nUsing these tools together with the Frontend and Backend team, we have created a payment method available for different platforms, verifying the correct operation step by step and according to product planning, we went to commercial production on time. \n\nTechnology stack: Node.js, Nestjs, Nextjs, React, Redux, JavaScript, Typescript, AWS, Docker, Github, CI/CD, MySql, Prisma."
       },
       {
         "title": "Senior Frontend",
         "date": "September 2020 - February 2021",
         "company": "Making Sense",
-        "description": "My responsibility was to be a connection between Designers and Developers, One of my Skills was to make my opinions known about user experience, design and  software. Research in severals ways of Design, develop frontend behavior and interaction with back end, decide appropriate approach code and agree for easy and excellent interface with my teams.  \n\nReact, Redux, TypeScript, StyleComponents, Figma, Sketch, Jira, SCRAM"
+        "description": "My responsibility was being a connection between Designers and Developers. One of my tasks was to communicate my knowledge about the software, design and user experience. For this, I participated in disscusions to agree upon the easiest and best approach to handle the Technology stack and best architect model. \n\nReact, Redux, TypeScript, StyleComponents, Figma, Sketch, Jira, SCRAM"
       },
       {
         "title": "Frontend Developer",
