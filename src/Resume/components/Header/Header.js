@@ -81,6 +81,10 @@ const ContainerHeader = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  @media print {
+    display: none;
+  }
 `
 const ContainerImg = styled.div`
   height: 44px;

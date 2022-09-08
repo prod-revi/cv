@@ -53,6 +53,10 @@ const Container = styled.div`
   @media (max-width: 800px) {
     width: 100%;
   }
+
+  @media print {
+    box-shadow: 0 0;
+  }
 `
 
 const Separator = styled.div`

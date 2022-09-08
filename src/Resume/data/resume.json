@@ -80,7 +80,7 @@
         "description": "This system allows companies to add, delete, and manage their sellers. As for the sellers, they can add, delete, and manage the products of the company and the customers."
       },
       {
-        "title": "Tic Tac Toe",
+        "title": "Unbeatable Tic-Tac-Toe",
         "url": "https://tic-tac-toe.rev.earth/",
         "description": "You! Beat it! \n Unbeatable Tic-Tac-Toe game using AI will try to beat you! Tecnologies: React and Minimax Algorithm and Alpha Beta."
       }
