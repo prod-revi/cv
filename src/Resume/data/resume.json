@@ -1,7 +1,7 @@
 {
   "head": {
     "name": "Oliver Ramirez Garcia",
-    "carrier": "Leader - Front End",
+    "carrier": "Frontend Lead",
     "email": "oliiv@outlook.com",
     "skype": "",
     "mobil": ""
@@ -24,28 +24,28 @@
     "title": "Experiences",
     "items": [
       {
-        "title": "Leader",
-        "date": "February 2020",
+        "title": "Frontend Lead",
+        "date": "February 2021 - now ",
         "company": "Dev Base",
-        "description": "Description of what I did in DevBase. \n\nI was responsible for:\nTeamwork - Senior Front End\nconstruction company, shows its clients its services\nusing React as technology and implementing in aws\ndevelop the designs proposed by the design team\nand testing together with the project manager and QA team\nWe put the product into production.\n\nI was responsible for:\nZuro - Technical Leader\ncompany for the transaction of money between companies\nTransfer of an already created architecture\ncontinued with the product that had already been assembled\ntaking it to the stage and production environments\nWe show the product to our client, preparing it for commercial production\n\n\nI was responsible for:\nTandym - Front End for Seniors\npayment method that is implemented in online stores, mainly as a plugin\nthe architecture is based on aws services, Front end: Next, React, Redux, DockerBackend: Nest, Mysql, Docker\nUsing these tools together with the Front End and Backend team, we have created a payment method available for different platforms.\nverifying the correct operation step by step\nand according to product planning\nto commercial production\nWe go to production on the agreed dates"
+        "description": "As part of the development team of Devbase, I participated in three projects aimed at growing the technological services of startups. \n\nI was responsible for:\nTeamwork - Senior Frontend \nconstruction company, shows its clients its services\nusing React as technology and implementing in aws\ndevelop the designs proposed by the design team\nand testing together with the project manager and QA team\nWe put the product into production.\n\nI was responsible for:\nZuro - Technical Leader\ncompany for the transaction of money between companies\nTransfer of an already created architecture\ncontinued with the product that had already been assembled\ntaking it to the stage and production environments\nWe show the product to our client, preparing it for commercial production\n\n\nI was responsible for:\n Tandym - Frontend Senior \nTandym offer a payment method implemented in Merchants as a plugin, \nthe architecture is based on aws services, with Frontend and \nBackend as a Docker images in aws clusters.  \nUsing these tools together with the Frontend and Backend team, we have created a payment method available for different platforms. \nverifying the correct operation step by step \nand according to product planning \nto commercial production \nWe go to production on the agreed dates. \n\nTechnology stack: Node.js, Nestjs, Nextjs, React, Redux, JavaScript, Typescript, AWS, Docker, Github, CI/CD, MySql, Prisma."
       },
       {
-        "title": "UX Senior Developer",
-        "date": "December 2020",
+        "title": "Senior Frontend",
+        "date": "September 2020 - February 2021",
         "company": "Making Sense",
-        "description": "My responsibility was to be a connection between Designers and Developers, One of my Skills was to make my opinions known about user experience, design and  software. Research in severals ways of Design, develop front end behavior and interaction with back end, decide appropriate approach code and agree for easy and excellent interface with my teams.  \n  React, Redux, TypeScript, StyleComponents, Figma, Sketch, Jira, SCRAM"
+        "description": "My responsibility was to be a connection between Designers and Developers, One of my Skills was to make my opinions known about user experience, design and  software. Research in severals ways of Design, develop frontend behavior and interaction with back end, decide appropriate approach code and agree for easy and excellent interface with my teams.  \n\nReact, Redux, TypeScript, StyleComponents, Figma, Sketch, Jira, SCRAM"
       },
       {
-        "title": "Front End Engineer",
+        "title": "Frontend Developer",
         "date": "March 2019 - September 2020",
         "company": "Wenance",
-        "description": "Solution thinker and provider. With my engineering capabilities complex projects in the Financial industry will be brought to life. In internal projects client identifying data will be processed. To fulfill the requirents of these projects, applications and multiple languages are used like: \n React, Redux, Node, JS, Styles CSS // Sass with styled components, API REST."
+        "description": "Solution thinker and provider. With my engineering capabilities complex projects in the Financial industry will be brought to life. In internal projects client identifying data will be processed. To fulfill the requirents of these projects, applications and multiple languages are used like: \n\nReact, Redux, Node, JS, Styles CSS // Sass with styled components, API REST."
       },
       {
-        "title": "UI/UX Developer",
+        "title": "Frontend Developer",
         "date": "February 2016 - February 2019",
         "company": "Eulas S.A.",
-        "description": "Maintaining the design and functionality of e-commerce. The business was located in United States of America. Projects were realized with the following companies: Ascena Group, Stadium Goods, Children Place. The following technologies were used for the projects: \n HTML5, CSS3, JS, AJAX, JQuery, Sass, Node.js, Express, React, Redux, OOP, Functional Programming, Jira, CMS, Webpack, Grunt.\n Some examples of my work with Eulas: \n  https://www.louandgrey.com/ \n https://www.anntaylor.com/ \n Kaban and Scrum as agile working methods are used in the projects above."
+        "description": "Maintaining the design and functionality of e-commerce. The business was located in United States of America. Projects were realized with the following companies: Ascena Group, Stadium Goods, Children Place. The following technologies were used for the projects: \n\nHTML5, CSS3, JS, AJAX, JQuery, Sass, Node.js, Express, React, Redux, OOP, Functional Programming, Jira, CMS, Webpack, Grunt.\n Some examples of my work with Eulas: \n  https://www.louandgrey.com/ \n https://www.anntaylor.com/ \n Kaban and Scrum as agile working methods are used in the projects above."
       }
     ]
   },
@@ -60,7 +60,7 @@
       },
       {
         "school": "Coder House",
-        "title": "Web Development, Front End Web Developer",
+        "title": "Web Development, Frontend Web Developer",
         "description": "Creation and design of web pages with HTML5, JS, CSS, bootstrap, jquery, APIs, animations. As self-educated person I improved my professional skills.",
         "dates": "2015 - 2016"
       }
